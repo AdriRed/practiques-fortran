@@ -1,0 +1,23 @@
+{
+    "name": "Fortran Development Environment",
+    "runArgs": [],
+    "customizations": {
+        "vscode": {
+            "extensions": [   // Triem quines extensions instalar
+                "fortran-lang.linter-gfortran",    // Modern Fortran
+                "mathematic.vscode-pdf",        // PDF Viewer (by Mathematic Inc)
+                "mammothb.gnuplot",               // Gnuplot (by mammothb)
+                "pkief.material-icon-theme",       // Material Icon Theme (by Philipp Kief)
+                "bierner.markdown-preview-github-styles",  // Markdown com un README de GitHub
+                "SanaAjani.taskrunnercode",   // Task Runner (by Sana Ajani)
+                "sndst00m.vscode-native-svg-preview" // SVG Preview
+            ]
+        }
+    },
+    "postCreateCommand": "sudo apt update && sudo apt install -y gfortran", // Instalem gfortran
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "workbench.iconTheme": "material-icon-theme",  // Triem Material Icon Theme com a tema per defecte
+        "github.gitAuthentication": false
+    }
+}
