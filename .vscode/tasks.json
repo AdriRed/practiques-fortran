@@ -20,7 +20,11 @@
                 "showReuseMessage": true,
                 "clear": false
             },
-            "args": ["${fileDirname}/builds", "-f", "|", "Out-Null"]
+            // windows
+            // "args": ["${fileDirname}/builds", "-f", "|", "Out-Null"]
+            
+            // linux
+            "args": ["-p", "${fileDirname}/builds"]
         }
     ],
 }
